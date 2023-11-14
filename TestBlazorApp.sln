@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBlazorApp.Server", "Server\TestBlazorApp.Server.csproj", "{868C9186-8FF3-4FA0-B149-8883E478CD38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBlazorApp.Server", "Server\TestBlazorApp.Server.csproj", "{868C9186-8FF3-4FA0-B149-8883E478CD38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBlazorApp.Client", "Client\TestBlazorApp.Client.csproj", "{E7E6CE1C-E4FA-4245-ABAE-F7F6FFB388AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBlazorApp.Client", "Client\TestBlazorApp.Client.csproj", "{E7E6CE1C-E4FA-4245-ABAE-F7F6FFB388AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBlazorApp.Shared", "Shared\TestBlazorApp.Shared.csproj", "{E1666357-E606-4B87-A856-518E2859A10D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBlazorApp.Shared", "Shared\TestBlazorApp.Shared.csproj", "{E1666357-E606-4B87-A856-518E2859A10D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C84ABA67-B7E8-474F-9377-FAA98E29007F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBlazorApp.Server.Tests", "Tests\TestBlazorApp.Server.Tests\TestBlazorApp.Server.Tests.csproj", "{47E08D3F-2CBA-401B-9BCB-FC4B6CC3BDC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBlazorApp.Server.Tests", "Tests\TestBlazorApp.Server.Tests\TestBlazorApp.Server.Tests.csproj", "{47E08D3F-2CBA-401B-9BCB-FC4B6CC3BDC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBlazorApp.Infastructure.Libs", "Infastructure\TestBlazorApp.Infastructure.Libs\TestBlazorApp.Infastructure.Libs.csproj", "{BDD58E2E-EB63-45B9-9D16-DFA51EEF48DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBlazorApp.Infastructure.Libs", "Infastructure\TestBlazorApp.Infastructure.Libs\TestBlazorApp.Infastructure.Libs.csproj", "{BDD58E2E-EB63-45B9-9D16-DFA51EEF48DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{31A29F6A-7C79-4D93-945B-A2F27105A627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBlazorApp.Server.IntegrationTests", "Integration.Tests\TestBlazorApp.Server.IntegrationTests\TestBlazorApp.Server.IntegrationTests.csproj", "{2D71AFE3-E5EB-4FD0-AED2-8347EA143E3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,12 +45,17 @@ Global
 		{BDD58E2E-EB63-45B9-9D16-DFA51EEF48DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDD58E2E-EB63-45B9-9D16-DFA51EEF48DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDD58E2E-EB63-45B9-9D16-DFA51EEF48DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D71AFE3-E5EB-4FD0-AED2-8347EA143E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D71AFE3-E5EB-4FD0-AED2-8347EA143E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D71AFE3-E5EB-4FD0-AED2-8347EA143E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D71AFE3-E5EB-4FD0-AED2-8347EA143E3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{47E08D3F-2CBA-401B-9BCB-FC4B6CC3BDC6} = {C84ABA67-B7E8-474F-9377-FAA98E29007F}
+		{2D71AFE3-E5EB-4FD0-AED2-8347EA143E3D} = {31A29F6A-7C79-4D93-945B-A2F27105A627}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C49495B-A175-4D6A-9836-7111C8B3F6B4}
