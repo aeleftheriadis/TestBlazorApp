@@ -6,7 +6,7 @@ using TestBlazorApp.Server.Models;
 
 namespace TestBlazorApp.Server.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class EmployeesController : ControllerBase
@@ -18,7 +18,7 @@ namespace TestBlazorApp.Server.Controllers
             _employeeRepository = employeeRepository;
         }
 
-        [HttpGet]
+        [HttpGet("All")]
         public async Task<IActionResult> GetAsync()
         {
             var employees = await _employeeRepository.GetAllAsync();
@@ -31,7 +31,7 @@ namespace TestBlazorApp.Server.Controllers
             return Ok(employees);
         }
 
-        [HttpGet]
+        [HttpGet("")]
         public async Task<IActionResult> GetEmployeeAsync([FromQuery] Guid employeeId)
         {
             var employee = await _employeeRepository.GetEmployeeAsync(employeeId);
@@ -43,6 +43,7 @@ namespace TestBlazorApp.Server.Controllers
             return Ok(employee);
         }
 
+        [HttpPost]
         public async Task<IActionResult> AddEmployee([FromBody] Employee model)
         {
             await _employeeRepository.CreateEmployeeAsync(model);
