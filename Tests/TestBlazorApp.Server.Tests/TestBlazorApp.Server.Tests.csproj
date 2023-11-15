@@ -25,7 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Infastructure\TestBlazorApp.Infastructure.Libs\TestBlazorApp.Infastructure.Libs.csproj" />
-    <ProjectReference Include="..\..\Server\TestBlazorApp.Server.csproj" />
   </ItemGroup>
 
 </Project>
