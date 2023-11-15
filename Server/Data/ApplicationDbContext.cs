@@ -26,14 +26,14 @@ namespace TestBlazorApp.Server.Data
                 (
                  new Employee
                  {
-                     Id = Guid.NewGuid(),
+                     Id = new Guid("38f89278-a805-4e97-b515-853ffda1fb16"),
                      Name = "Mark",
                      AccountNumber = "123-3452134543-32",
                      Age = 30
                  },
                  new Employee
                  {
-                     Id = Guid.NewGuid(),
+                     Id = new Guid("ddd63623-8609-401e-95d1-217d85e84e96"),
                      Name = "Evelin",
                      AccountNumber = "123-9384613085-55",
                      Age = 28
